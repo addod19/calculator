@@ -13,6 +13,12 @@
 - React
 - Heroku
 
+## Deployment
+
+- ``` heroku create $APP_NAME --buildpack mars/create-react-app```
+- ``` git push heroku Milestone-1:master ```
+- ` heroku open `
+
 ## Live Demo
 
 [Live Demo Link](https://calculator-20.herokuapp.com/)
@@ -68,4 +74,4 @@ Give us a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [Apache](lic.url) licensed.
