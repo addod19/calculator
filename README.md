@@ -1,6 +1,6 @@
 # Milestone 2 
 
-> In this Milestone, I erformed the following actions;
+> In this Milestone, I performed the following actions;
   - Create a component directory inside src with the following files
     - App.js
     - Button.js
