@@ -1,6 +1,14 @@
 import React from 'react';
+// import styled from 'styled-components';
 
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+
+// const Result = styled.div`
+//     width: 50%;
+//     height: 3em;
+//     backgroundColor: black;
+//     color: white;
+// `;
 
 const Display = ( { result } ) => 
     (
