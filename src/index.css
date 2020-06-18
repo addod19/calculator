@@ -39,10 +39,6 @@ code {
 }
 .common-width {
   width: 700px;
-  /* height: 2em;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center; */
 }
 
 .result {
@@ -73,4 +69,10 @@ code {
 }
 .w-25 {
   width: 25%;
+}
+
+.bold-size {
+  font-size: 35px;
+  font-weight: 900;
+  border: 1px solid gray;
 }

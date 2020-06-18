@@ -6,14 +6,16 @@ import Button from './Button';
 const ButtonPanel = () => {
   const group1 = ['AC', '+/-', '%', '÷'];
   const group2 = ['7', '8', '9', 'X'];
-  const group3 = ['3', '4', '5', '-'];
+  const group3 = ['4', '5', '6', '-'];
   const group4 = ['1', '2', '3', '+'];
   const group5 = ['0', '.', '='];
 
-
-  const buttonGroups = group => group.map(button => ( (button === '0')
-    ? <Button name={button} key={button} width={true} />
-    : <Button name={button} key={button} width={false}  />
+  const buttonGroups = group => group.map( button => ( 
+    (button === '0') ? // If button is 0 set the width to 50%
+      <Button name={button} key={button} width={true} /> :
+    (button === group[group.length - 1]) ? // if the button is the last element in group
+      <Button name={button} key={button} width={false} color="#ff8000" /> : // set the color
+      <Button name={button} key={button} width={false}  /> // default color
   ));
 
   return (
