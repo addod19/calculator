@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 const Display = ({ result }) => (
-  <div className="displayWrap">
+  <div className="Display common-width">
     <div className="result">
       { result }
     </div>

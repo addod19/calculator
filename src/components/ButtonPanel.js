@@ -2,6 +2,7 @@ import React from 'react';
 
 import Button from './Button';
 
+
 const ButtonPanel = () => {
   const group1 = ['AC', '+/-', '%', '÷'];
   const group2 = ['7', '8', '9', 'X'];
@@ -16,7 +17,7 @@ const ButtonPanel = () => {
 
   return (
 
-    <div className="calculatorPanel">
+    <div className="calculatorPanel bPanel-width">
       <div className="group1">
         { buttonGroups(group1)}
       </div>

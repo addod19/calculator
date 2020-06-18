@@ -26,15 +26,34 @@ code {
     monospace;
 }
 
-.displayWrap {
-  background-color: blue;
-  width: 50%;
-  height: 2em;
+.App {
+  display: flex;
+  flex-direction: column;
+}
+.Display {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-self: center;
+  background-color: gray;
+  height: 100px;
+}
+.common-width {
+  width: 700px;
+  /* height: 2em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; */
 }
 
 .result {
+  display: flex;
+  flex-direction: column-reverse;
   color: white;
+  font-weight: bolder;
+  font-size: 38px;
+  padding: 5px;
+}
+
+.bPanel-width {
+  width: 100%;
 }
