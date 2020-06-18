@@ -10,9 +10,10 @@ const ButtonPanel = () => {
   const group4 = ['1', '2', '3', '+'];
   const group5 = ['0', '.', '='];
 
-  const buttonGroups = group => group.map(button => ((button)
-    ? <Button name={button} key={button} />
-    : <Button name={button} key={button} />
+
+  const buttonGroups = group => group.map(button => ( (button === '0')
+    ? <Button name={button} key={button} width={true} />
+    : <Button name={button} key={button} width={false}  />
   ));
 
   return (
