@@ -1,6 +1,18 @@
-# Milestone 1 
+# Milestone 2 
 
-> Setting a React App, Installing Big.js and Deploying App to Heroku.
+> In this Milestone, I performed the following actions;
+  - Create a component directory inside src with the following files
+    - App.js
+    - Button.js
+    - ButtonPanel.js
+    - Display.js
+  - App component renders the Display and ButtonPanel Components
+  - Button component has the button template for creating buttons
+  - ButtonPanel component has a group of buttons
+  - Display component currently displays a default result value
+ - Fix linter errors with the following commands
+    - ``` npx stylelint "**/*.{css,scss}" ``` for stylelint
+    - ``` npx eslint . ``` for eslint 
 
 
 ## Tools To Work With
