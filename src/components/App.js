@@ -5,7 +5,7 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
 const App = () => (
-  <div className="wrapper">
+  <div className="App common-width">
     <Display />
     <ButtonPanel />
   </div>
