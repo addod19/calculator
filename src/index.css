@@ -30,6 +30,7 @@ code {
   display: flex;
   flex-direction: column;
 }
+
 .Display {
   display: flex;
   flex-direction: row-reverse;
@@ -37,6 +38,7 @@ code {
   background-color: gray;
   height: 100px;
 }
+
 .common-width {
   width: 700px;
 }
@@ -67,6 +69,7 @@ code {
 .w-50 {
   width: 50%;
 }
+
 .w-25 {
   width: 25%;
 }
