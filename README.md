@@ -6,7 +6,7 @@
     - Button.js
     - ButtonPanel.js
     - Display.js
-  - CSS flex box is used to dispaly App, Display and ButtonPanel components
+  - CSS flex box is used to display App, Display and ButtonPanel components
   - Calculator width is set to 700px ( ```.common-width```)
 
   - Display
