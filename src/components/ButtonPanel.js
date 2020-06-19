@@ -9,13 +9,30 @@ const ButtonPanel = () => {
   const group4 = ['1', '2', '3', '+'];
   const group5 = ['0', '.', '='];
 
+  const terFunc = (button, group) => ((button === group[group.length - 1])
+  // if the button is the last element in group
+    ? (
+      <Button
+        name={button}
+        key={button}
+        wide={false}
+        color="#ff8000"
+      />
+    ) // set the color
+    : (
+      <Button
+        name={button}
+        key={button}
+        wide={false}
+        onclick={onclick}
+      />
+    ));// default color
+
   const buttonGroups = group => group.map(button => (
 
     (button === '0') // If button is 0 set the width to 50%
       ? <Button name={button} key={button} wide />
-      : (button === group[group.length - 1]) // if the button is the last element in group
-        ? <Button name={button} key={button} wide={false} color="#ff8000" /> // set the color
-        : <Button name={button} key={button} wide={false} onclick={onclick} /> // default color
+      : terFunc(button, group)
   ));
 
   return (
