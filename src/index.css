@@ -29,6 +29,7 @@ code {
 .App {
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 .Display {

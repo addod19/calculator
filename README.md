@@ -1,15 +1,30 @@
-# Milestone 2 
+# Milestone 3 
 
 > In this Milestone, I performed the following actions;
-  - Create a component directory inside src with the following files
+  - Styled the following components
     - App.js
     - Button.js
     - ButtonPanel.js
     - Display.js
-  - App component renders the Display and ButtonPanel Components
-  - Button component has the button template for creating buttons
-  - ButtonPanel component has a group of buttons
-  - Display component currently displays a default result value
+  - CSS flex box is used to dispaly App, Display and ButtonPanel components
+  - Calculator width is set to 700px ( ```.common-width```)
+
+  - Display
+    - Background-color is set to gray
+    - Height set to 100px
+    - The result has white and bold text
+    - The result has padding
+    - The result is aligned to the right
+  - ButtonPanel
+    - Each row of button group is set to 100px
+    - The button groups is displayed horizontally in rows
+  - Button
+    - Buttons take 25% of the full width of the containner, except for ```0```
+    - The text button is centered and displayed in black color
+    - Each button has a border
+  - Pass ```color``` and ```wide``` props
+    - The color prop is used to customize the color of the button
+    - The wide prop should accept a boolean
  - Fix linter errors with the following commands
     - ``` npx stylelint "**/*.{css,scss}" ``` for stylelint
     - ``` npx eslint . ``` for eslint 
