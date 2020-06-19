@@ -12,7 +12,6 @@ const Button = props => {
       className="bold-size "
       onClick={onClick}
       type="button"
-      color={color}
       style={{
         backgroundColor: color,
         width: (wide === true ? '50%' : '25%'),

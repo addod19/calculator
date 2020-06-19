@@ -1,5 +1,5 @@
 import React from 'react';
-/* eslint no-nested-ternary: 2 */
+
 import Button from './Button';
 
 const ButtonPanel = () => {
