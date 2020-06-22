@@ -1,5 +1,5 @@
 import React from 'react';
-import Calculate from '../logic/calculate';
+// import Calculate from '../logic/calculate';
 
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';

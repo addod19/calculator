@@ -1,16 +1,15 @@
-import Operate from './operate';
+import Operate from './operate'; /* eslint prefer-const: "error" */
 
 const Calculate = (data = {}, btnName) => {
-    let { total, next, operation } = data;
+  let { total, next } = data;
+  const { operation } = data;
+  if (btnName === '+/-') {
+    total *= -1;
+    next *= -1;
+    return total;
+  }
 
-    if (btnName === '+/-') {
-        total *= -1;
-        next *= -1;
-        return total;
-    }
-
-
-    return Operate(total, next, operation)
-}
+  return Operate(total, next, operation);
+};
 
 export default Calculate;
