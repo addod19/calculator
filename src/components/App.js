@@ -1,5 +1,5 @@
 import React from 'react';
-// import Big from './big.mjs';
+// import Calculate from '../logic/calculate';
 
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
