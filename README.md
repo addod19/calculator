@@ -1,30 +1,27 @@
-# Milestone 3 
+# Milestone 4 
 
 > In this Milestone, I performed the following actions;
-  - Styled the following components
-    - App.js
-    - Button.js
-    - ButtonPanel.js
-    - Display.js
-  - CSS flex box is used to display App, Display and ButtonPanel components
-  - Calculator width is set to 700px ( ```.common-width```)
-
-  - Display
-    - Background-color is set to gray
-    - Height set to 100px
-    - The result has white and bold text
-    - The result has padding
-    - The result is aligned to the right
-  - ButtonPanel
-    - Each row of button group is set to 100px
-    - The button groups is displayed horizontally in rows
-  - Button
-    - Buttons take 25% of the full width of the containner, except for ```0```
-    - The text button is centered and displayed in black color
-    - Each button has a border
-  - Pass ```color``` and ```wide``` props
-    - The color prop is used to customize the color of the button
-    - The wide prop should accept a boolean
+  - Create a logic directory with 2 files
+    - calculate.js
+    - operate.js
+  - Implement calculate.js module
+    - Contain one default method calculate
+    - Calculate method accepts calculator data object and button name as arguments
+    - Calculator data object contains 3 properties
+      - total
+      - next
+      - operation
+    - The method uses the buttonName argument to mutate the calculator’s data object and return its modified version
+  - Implement operate.js module
+    - Import big.js module through npm package
+    - Implements default method operate
+    - The operate function accepts the following as arguments
+      - num1
+      - num2
+      - operation
+    - Switch statement is use for switching between operation and performing the required math
+    - Return result after each operation
+ - Import calculate.js to the App component
  - Fix linter errors with the following commands
     - ``` npx stylelint "**/*.{css,scss}" ``` for stylelint
     - ``` npx eslint . ``` for eslint 
@@ -73,7 +70,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Authors
 
-👤 **Author1**
+👤 **Daniel Larbi Addo**
 
 - Github: [@addod19](https://github.com/addod19)
 - Twitter: [@DanielLarbiAdd1](https://twitter.com/DanielLarbiAdd1)
