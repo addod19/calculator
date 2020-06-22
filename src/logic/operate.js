@@ -1,4 +1,4 @@
-import Big from 'big-js';
+let Big = require('big.js')
 
 const Operate = (num1, num2, operation) => {
     const num1Val = Big(num1);
@@ -22,8 +22,10 @@ const Operate = (num1, num2, operation) => {
         case 'x':
             result = num1Val.times(num2Val).toString();
             break;
+        case '%':
+            result = num1Val.mod(num2Val).toString();
         default:
-            result = "Sorry, we can't manipulate the data";
+            result = "Sorry, invalid operator";
     }
 }
 

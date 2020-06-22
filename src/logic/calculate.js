@@ -1,4 +1,4 @@
-
+import Operate from './operate';
 
 const Calculate = (data = {}, btnName) => {
     let { total, next, operation } = data;
@@ -10,13 +10,7 @@ const Calculate = (data = {}, btnName) => {
     }
 
 
-    return(
-        {
-            total,
-            next,
-            operation
-        }
-    )
+    return Operate(total, next, operation)
 }
 
 export default Calculate;
