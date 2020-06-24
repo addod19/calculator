@@ -14,10 +14,16 @@ class App extends React.Component {
       operation: null
     };
 
-    this.buttonClick = this.buttonClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(btnName) {
+    const { result, nextVal, operation } = this.state;
+    this.setState( Calculate({ result, nextVal, operation}, btnName) );
   }
 
   render() {
+    const { result, nextVal } = this.state;
     return(
       <div className="App common-width">
         <Display />
