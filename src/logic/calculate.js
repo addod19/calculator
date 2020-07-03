@@ -9,12 +9,11 @@ const Calculate = (data, btnName) => {
     total *= -1;
     next *= -1;
   }
-  if ( btnName === '=') {
-    while(next !== null) {
+  if (btnName === '=') {
+    while (next !== null) {
       total = Operate(total, next, operation);
       next = null;
     }
-    
   }
   if (btnName === 'AC') {
     total = null;
@@ -22,14 +21,13 @@ const Calculate = (data, btnName) => {
     operation = null;
   }
 
-  if ( btnName === '.') {
+  if (btnName === '.') {
     if (!next.includes('.')) {
       next += btnName;
     }
-
   }
 
-  if ( btnName === '%') {
+  if (btnName === '%') {
     total /= 100;
     next /= 100;
   }
@@ -56,7 +54,7 @@ const Calculate = (data, btnName) => {
     }
   }
 
-  return  { total, next, operation };
+  return { total, next, operation };
 };
 
 export default Calculate;

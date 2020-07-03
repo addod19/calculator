@@ -53,10 +53,8 @@
   font-weight: 900;
   border: 1px solid gray;
 }
+
 .focus:focus {
   border: 1px solid white;
-}
-@media screen and (min-width: 768px) {
- 
-  
+  cursor: pointer;
 }

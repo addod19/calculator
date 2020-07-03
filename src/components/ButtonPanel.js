@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = ( {handleClick}) => {
+const ButtonPanel = ({ handleClick }) => {
   // const { handleClick } = props;
   const group1 = ['AC', '+/-', '%', '÷'];
   const group2 = ['7', '8', '9', 'x'];
@@ -33,7 +33,7 @@ const ButtonPanel = ( {handleClick}) => {
   const buttonGroups = group => group.map(button => (
 
     (button === '0') // If button is 0 set the width to 50%
-      ? <Button name={button} key={button} wide  handleClick={handleClick} />
+      ? <Button name={button} key={button} wide handleClick={handleClick} />
       : terFunc(button, group)
   ));
 
@@ -60,6 +60,6 @@ const ButtonPanel = ( {handleClick}) => {
 };
 
 ButtonPanel.propTypes = {
-  handleClick: PropTypes.func.isRequired
-}
+  handleClick: PropTypes.func.isRequired,
+};
 export default ButtonPanel;
