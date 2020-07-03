@@ -21,7 +21,6 @@ const Button = ({
 Button.defaultProps = {
   color: '#9a9a9a',
   wide: 1,
-  // handleClick: () => console.log('hi')
 };
 
 Button.propTypes = {

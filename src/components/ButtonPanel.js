@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const ButtonPanel = ({ handleClick }) => {
-  // const { handleClick } = props;
   const group1 = ['AC', '+/-', '%', '÷'];
   const group2 = ['7', '8', '9', 'x'];
   const group3 = ['4', '5', '6', '-'];
