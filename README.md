@@ -1,27 +1,24 @@
-# Milestone 4 
+# Milestone 5
 
 > In this Milestone, I performed the following actions;
-  - Create a logic directory with 2 files
-    - calculate.js
-    - operate.js
-  - Implement calculate.js module
-    - Contain one default method calculate
-    - Calculate method accepts calculator data object and button name as arguments
-    - Calculator data object contains 3 properties
-      - total
-      - next
-      - operation
-    - The method uses the buttonName argument to mutate the calculator’s data object and return its modified version
-  - Implement operate.js module
-    - Import big.js module through npm package
-    - Implements default method operate
-    - The operate function accepts the following as arguments
-      - num1
-      - num2
-      - operation
-    - Switch statement is use for switching between operation and performing the required math
-    - Return result after each operation
- - Import calculate.js to the App component
+  - App Component
+    - App set as stateful parent component
+    - Initialize state in constructor with 3 properties;
+      - Total
+      - Next
+      - Operation
+    - Render function display the following component
+      - Display
+      - Button Panel
+    - Implement handle click function which takes button name as argument and changes state based on result of calculate function
+    - Pass the total or next value to Display to display the current result
+    - Pass handleClick as a clickHandler property to ButtonPanel
+  - Button Panel
+    - Implement the handleClick function which takes buttonName as an argument and returns clickHandler from props
+    - Pass the clickHandler property to each button in the panel
+  - Button
+    - Implement the handleClick function which takes buttonName as an argument and returns clickHandler from props
+    - Use the onClick event to attach the handleClick event to the button
  - Fix linter errors with the following commands
     - ``` npx stylelint "**/*.{css,scss}" ``` for stylelint
     - ``` npx eslint . ``` for eslint 
