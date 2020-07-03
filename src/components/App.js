@@ -6,11 +6,11 @@ import ButtonPanel from './ButtonPanel';
 
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      result: null,
-      nextVal: null,
+      total: null,
+      next: null,
       operation: null
     };
 
@@ -18,16 +18,16 @@ class App extends React.Component {
   }
 
   handleClick(btnName) {
-    const { result, nextVal, operation } = this.state;
-    this.setState( Calculate({ result, nextVal, operation}, btnName) );
+    const { total, next, operation } = this.state;
+    this.setState( Calculate( { total, next, operation}, btnName) );
   }
 
   render() {
-    const { result, nextVal } = this.state;
+    const { total, next } = this.state;
     return(
       <div className="App common-width">
-        <Display />
-        <ButtonPanel />
+        <Display total={ total || next || '0'}/>
+        <ButtonPanel handleClick={this.handleClick} />
       </div>
     )
   }

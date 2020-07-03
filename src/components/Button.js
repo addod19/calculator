@@ -1,16 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = props => {
-  const {
-    onClick, color, wide, name,
-  } = props;
+const Button = ( {color, name, wide, handleClick} )=> {
 
   return (
 
     <button
-      className="bold-size "
-      onClick={onClick}
+      className="bold-size focus"
+      onClick={() => handleClick(name)}
       type="button"
       style={{
         backgroundColor: color,
@@ -25,11 +22,12 @@ const Button = props => {
 Button.defaultProps = {
   color: '#9a9a9a',
   wide: 1,
+  // handleClick: () => console.log('hi')
 };
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func,
   color: PropTypes.string,
   wide: PropTypes.bool,
 };

@@ -1,8 +1,9 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => {
+const ButtonPanel = ( {handleClick}) => {
+  // const { handleClick } = props;
   const group1 = ['AC', '+/-', '%', '÷'];
   const group2 = ['7', '8', '9', 'x'];
   const group3 = ['4', '5', '6', '-'];
@@ -17,6 +18,7 @@ const ButtonPanel = () => {
         key={button}
         wide={false}
         color="#ff8000"
+        handleClick={handleClick}
       />
     ) // set the color
     : (
@@ -24,14 +26,14 @@ const ButtonPanel = () => {
         name={button}
         key={button}
         wide={false}
-        onclick={onclick}
+        handleClick={handleClick}
       />
     ));// default color
 
   const buttonGroups = group => group.map(button => (
 
     (button === '0') // If button is 0 set the width to 50%
-      ? <Button name={button} key={button} wide />
+      ? <Button name={button} key={button} wide  handleClick={handleClick} />
       : terFunc(button, group)
   ));
 
@@ -57,4 +59,7 @@ const ButtonPanel = () => {
   );
 };
 
+ButtonPanel.propTypes = {
+  handleClick: PropTypes.func.isRequired
+}
 export default ButtonPanel;
