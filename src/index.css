@@ -1,0 +1,60 @@
+
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.Display {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+  background-color: gray;
+  height: 100px;
+}
+
+.common-width {
+  width: 700px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
+  font-weight: bolder;
+  font-size: 38px;
+  padding: 5px;
+}
+
+.bPanel-width {
+  width: 100%;
+}
+
+.group1,
+.group2,
+.group3,
+.group4,
+.group5 {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.bold-size {
+  font-size: 35px;
+  font-weight: 900;
+  border: 1px solid gray;
+}
+
+.focus:focus {
+  border: 1px solid white;
+  cursor: pointer;
+}
