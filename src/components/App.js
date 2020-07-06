@@ -22,10 +22,10 @@ class App extends React.Component {
   }
 
   render() {
-    const { total, next } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <div className="App common-width">
-        <Display total={total || next || '0'} />
+        <Display total={ total } operation={ operation } next={ next } />
         <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
