@@ -1,20 +1,29 @@
 import React from 'react';
 import propTypes from 'prop-types';
 
-const Display = ({ result }) => (
+const Display = ({ total, next, operation }) => (
   <div className="Display common-width">
     <div className="result">
-      { result }
+      { total }
+      { ' ' }
+      { operation }
+      { ' ' }
+      { next }
+      { ' ' }
     </div>
   </div>
 );
 
 Display.propTypes = {
-  result: propTypes.string,
+  total: propTypes.string,
+  next: propTypes.string,
+  operation: propTypes.string,
 };
 
 Display.defaultProps = {
-  result: '0',
+  total: '0',
+  next: '',
+  operation: '',
 };
 
 export default Display;
