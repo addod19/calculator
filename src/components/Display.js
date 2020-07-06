@@ -17,13 +17,13 @@ const Display = ({ total, next, operation }) => (
 Display.propTypes = {
   total: propTypes.string,
   next: propTypes.string,
-  operation: propTypes.string
+  operation: propTypes.string,
 };
 
 Display.defaultProps = {
   total: '0',
   next: '',
-  operation: ''
+  operation: '',
 };
 
 export default Display;

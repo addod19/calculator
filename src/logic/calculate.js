@@ -44,6 +44,7 @@ const Calculate = (data, btnName) => {
       total = Operate(total, next, operation);
       operation = btnName;
       next = null;
+      operation = null;
     }
     while (next !== null) {
       total = next;

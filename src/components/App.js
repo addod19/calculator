@@ -25,7 +25,7 @@ class App extends React.Component {
     const { total, next, operation } = this.state;
     return (
       <div className="App common-width">
-        <Display total={ total } operation={ operation } next={ next } />
+        <Display total={total} operation={operation} next={next} />
         <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
